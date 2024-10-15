@@ -1,0 +1,18 @@
+<section class="layout h-screen bg-lightSecondary">
+  <nav class="navbar bg-lightPrimary h-[10%] border-b-darkPrimary shadow-md">
+    <div class="nav-items flex justify-between py-6 px-10">
+      <h1 class="font-bold text-xl">{{title}}</h1>
+      <div class="theme flex gap-2 cursor-pointer">
+        <img
+          class="w-4"
+          src="../../../assets/dark-mode-svgrepo-com.svg"
+          alt=""
+        />
+        <button>{{theme}}</button>
+      </div>
+    </div>
+  </nav>
+  <div class="components mx-36">
+    <ng-content></ng-content>
+  </div>
+</section>
